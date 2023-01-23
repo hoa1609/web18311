@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lap10_b2</title>
+    <link rel="stylesheet" href="style_b1.css">
+</head>
+
+<body>
+    <div class="group">
+        <label for="">Họ và Tên</label> <br>
+        <input class="from-control" type="text">
+    </div>
+    <br>
+    <div class="group">
+        <fieldset>
+            <label for="">Giới Tính</label> <br>
+            <input type="radio"> Nam
+            <input type="radio">Nữ
+        </fieldset>
+    </div>
+    <br>
+    <div class="group">
+        <fieldset>
+            <label for="">Ngày Sinh</label> <br>
+            <input type="date">
+        </fieldset>
+    </div>
+    
+    <br>
+    <div class="group">
+        <label for="">Điểm</label> <br>
+        <input class="from-control" type="number" min="0" max="10" step="0.25">
+    </div>
+    <br>
+    
+    <div class="group">
+        <label for="">Nghề Nghiệp</label> <br>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="CEO">
+            <option value="Master shef">
+            <option value="Master buidding">
+            <option value="Gà mờ">
+            <option value="Gà con">
+        </datalist>
+    </div>
+    <br>
+    <div>
+        <fieldset>
+            <label for="">Sở Thích</label> <br>
+            <input type="checkbox">Thể Thao
+            <input type="checkbox">Du Lịch
+            <input type="checkbox">Âm Nhạc
+            <input type="checkbox">Ẩm thực
+        </fieldset>
+    </div>
+    <br>
+    <div>
+        <label for="">Ghi Chú</label> <br>
+        <textarea  class="from-control" name="" id="" cols="50" rows="7"></textarea>
+    </div>
+    <br>
+    <div>
+        <button class="form-button">Đăng kí</button>
+        <button class="form-button">Nhập lại</button>
+    </div>
+
+</body>
+
+</html>

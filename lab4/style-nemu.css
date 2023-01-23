@@ -1,0 +1,19 @@
+.menu {
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 25px;
+}
+
+.menu>a {
+    text-decoration: none;
+    color: blue;
+}
+
+.menu>:visited {
+    color: green;
+}
+
+.menu>a:hover {
+    color: red;
+    text-decoration: underline;
+}

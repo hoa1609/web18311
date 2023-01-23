@@ -1,0 +1,27 @@
+table {
+    border-collapse:collapse ;
+    margin: 0px auto;
+    text-align: center;
+    width: 80%;
+    line-height: 40px;
+}
+  tr, th{
+    border: 3px solid #78b43d ;
+   
+}   
+td{
+    padding: 10px;
+}
+
+th{
+    background: #78b43d;
+    font-weight: 700;
+    color: white;
+}
+body{
+    font-size: 22px;
+    font-weight: 600;
+}
+.doi{
+    background: #bfe897;
+}
