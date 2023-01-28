@@ -1,0 +1,17 @@
+.BGR{
+    width: 800px;
+    height: 350px;
+}
+.video{
+    width: 650px;
+    height: 350px;
+    background-color: red;
+    margin-right: 10px  ;
+    float: left;
+}
+.anh{
+    width: 140px;
+    height: 100px;
+    margin-bottom:20px ;
+    float: left;
+}

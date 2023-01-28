@@ -1,0 +1,28 @@
+table {
+    border-collapse:collapse ;
+    margin: 0px auto;
+    text-align: center;
+    width: 80%;
+    line-height: 30px;
+}
+  tr, th{
+    border: 2px solid #5496e7 ;
+   
+} 
+tr:nth-child(2n+3){
+    background-color: rgb(208, 210, 210);
+}  
+td{
+    padding: 10px;
+}
+
+th{
+    background: #4039d4;
+    font-weight:10;
+    color: white;
+}
+body{
+    font-size: 18px;
+    font-weight: 100;
+}
+
