@@ -1,13 +1,11 @@
-.BGR{
-    width: 800px;
-    height: 350px;
-}
+
 .video{
     width: 650px;
     height: 350px;
-    background-color: red;
+    background-color: gray;
     margin-right: 10px  ;
     float: left;
+    box-shadow: 10px 30px 50px rgb(90, 90, 217);
 }
 .anh{
     width: 140px;
