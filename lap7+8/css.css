@@ -5,7 +5,6 @@
 .menu ul li a{
     display: block;
     text-decoration: none;
-    font-variant: small-caps;
     font-size: large;
     color: white;
     padding: 0px 10px;
@@ -16,8 +15,8 @@
     margin: 0px;
     list-style: none;
     border-radius: 3px;
-    background-color: orange;
-    text-align: center;
+    background-color: rgb(146, 14, 14);
+    text-align: left;
 }
 .menu ul li a:hover{
     color: yellow;
@@ -29,7 +28,7 @@
     margin: 0px;
     list-style: none ;
     border-radius: 3px;
-    width: 100px;
+    width: 160px;
     background-color: white;
     box-shadow:2px 1px 10px gray ;
 }
@@ -38,14 +37,13 @@
 }
 .menu ul ul a{
     line-height: 30px;
-    color: orangered;
-    text-decoration: none;
-    font-variant: small-caps;
+    color:red;
+    
     font-size: larger;
     padding: 1px 20px;
 }
 .menu ul ul a:hover{
-    background-color: orange;
+    background-color: rgb(105, 103, 103);
     color: white;
-
+    min-width: 120px;
 }

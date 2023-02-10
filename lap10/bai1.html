@@ -1,35 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lap10.1 </title>
-    <link rel="stylesheet" href="style_b1.css">
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Thiết Kế Form Bằng CSS</title>
+     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css.css">
 </head>
-
-<body>
-    <form action="">
-    <div class="group">
-        <label for="">Họ và Tên</label> <br>
-        <input class="from-control" type="text" tabindex="1">
+ <body>
+    <div class="form_dang_nhap">
+        <h2>Đăng Nhập</h2>
+        <form>
+            <div class="o_nhap">
+                <input type="text" name="" required="">
+                <label>Tên Đăng Nhập</label>
+            </div>
+            <div class="o_nhap">
+                <input type="password" name="" required="">
+                <label>Mật Khẩu</label>
+            </div>
+            <input type="submit" name="" value="Đăng Nhập">
+        </form>
     </div>
-    <div class="group">
-        <label for="">Quốc Tịch</label> <br>
-        <input type="text" value="Viet Nam" readonly>
-    </div>
-    <div class="group">
-        <label for="">Ghi chú</label> <br>
-        <textarea class="from-control" name="" id="" cols="50" rows="5" tabindex="2"></textarea>
-    </div>
-    <div class="group">
-        <button class="form-button" tabindex="3">Thêm</button>
-        <button class="form-button" tabindex="4">Sửa</button>
-        <button class="form-button" disabled>Xoá</button>
-    </div>
-</form>
-
-</body>
-
-</html>
+ </body>
+ </html>
