@@ -71,6 +71,12 @@ span{
     border-radius:5px;
     background-color: rgb(16, 16, 16);
 }
+.add_user:hover{
+    background-color: #a08d8d;
+}
+.dowload:hover{
+    background-color: #a08d8d;
+}
 
 table {
     border-collapse:collapse ;
@@ -192,6 +198,9 @@ body{
     width: 100px;
     text-align: right;
     box-sizing: border-box;
+}
+.hover_delete:hover{
+    background-color: rgb(226, 40, 40);
 }
 .pen{
     width: 100px;
