@@ -166,6 +166,9 @@ marquee{
 
 #nav .icon {
     padding-top: 4px;
+}       
+#nav .icon a:hover{
+    color: yellow;
 }
 
 #nav .right ul {
@@ -174,7 +177,29 @@ marquee{
 
 .content {
     display: flex;
-    justify-content: space-between;
+    position: relative;
+    text-align: left;
+    margin-left: 0px;
+
+}
+.letf_cow{
+    
+}
+.letf_cow ul{
+    list-style: none;
+    text-align: left;
+    margin-left: 0px;
+    margin-top: 0px;
+    
+    background-color: gray;
+
+}
+.letf_cow li a{
+    text-decoration: none;
+    line-height: 40px;
+    display: block;
+    text-align: left;
+   color: #fff;
 }
 .letf li:hover{
     background-color: #030759;
