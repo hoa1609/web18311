@@ -20,7 +20,7 @@ td {
 }
 
 tr {
-    background-color: rgb(233, 231, 238);
+    background-color: rgba(19, 60, 243, 0.049);
 }
 
 td a {
@@ -52,10 +52,10 @@ svg {
     margin: 8px;
 }
 
-section {
+.section {
     position: relative;
     width: 80%;
-    height: 1700px;
+    height: 3000px;
     margin-left: 10%;
     border: 1px solid #6b6b6a;
     border-radius: 10px;
@@ -275,4 +275,73 @@ footer {
    width: 80%;
    margin-left: 10%;
    margin-top: 60px
+}
+
+
+
+.nav_cow_3{
+        width: 100%;
+        border: 1px  solid gray;
+        height: 1200px;
+        margin-top: 80px;
+}
+
+
+.fram_verol{
+    width: 70%;
+    border: 1px solid gray;
+    height: 1200px;
+}
+
+
+
+.frame_cow1 tr{
+    background-color: #ffff;
+}
+.tille_start{
+    border: 1px solid rgb(202, 198, 198);
+    /* width: 50%; */
+    height: 50px;
+    border-radius: 8px 8px 0 0;
+    background-color: #ededed;
+    border-bottom: none;
+    font-weight: bold;
+}
+.tille_start p{
+    color: #1525a0;
+    margin-top: 12px;
+    margin-left: 10px;
+   
+}
+
+.frame_cow1{
+    /* width: 50%; */
+    height: 400px;
+    border: 1px solid rgb(211, 208, 208);
+    border-radius:0px 0px 8px 8px;
+    box-shadow: 0 0 5px rgb(213, 208, 208);
+    padding: 0px 20px 20px 20px;
+}
+.font_text{
+    font-weight: 700;
+    margin: 5px 10px 5px 10px;
+    font-size: 18px;
+}
+
+.tille_conten{
+    font-size: 17px;
+    font-weight: 600;
+    color: #100b99;
+    height:30px;
+    
+}
+.tille_conten td{
+    margin-top: 0px;
+}
+.frame_conten_1{
+    margin: 5px;
+}
+.conten__main{
+    display: flex;
+    justify-content: space-around;
 }
