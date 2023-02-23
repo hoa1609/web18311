@@ -1,4 +1,4 @@
-body {
+    body {
     margin: 0;
     padding: 0;
 }
@@ -20,7 +20,7 @@ td {
 }
 
 tr {
-    background-color: rgba(19, 60, 243, 0.049);
+    background-color: rgba(15, 108, 221, 0.184);
 }
 
 td a {
@@ -47,6 +47,9 @@ td svg {
 td svg:hover {
     color: rgb(242, 90, 8);
 }
+.login__right:hover{
+    color: rgb(236, 19, 19);
+}
 
 svg {
     margin: 8px;
@@ -55,12 +58,12 @@ svg {
 .section {
     position: relative;
     width: 80%;
-    height: 3000px;
+    height: 2700px;
     margin-left: 10%;
     border: 1px solid #6b6b6a;
     border-radius: 10px;
     border-top: none;
-    margin-top: -50px;
+    margin-top: -30px;
 }
 
 * {
@@ -178,7 +181,6 @@ svg {
     background-color: rgb(247, 247, 10);
 }
 
-
 .pluss-cow {
     box-sizing: border-box;
     width: 99%;
@@ -208,21 +210,6 @@ svg {
     color: #575d6d;
     font-size: 17px;
 }
-
-
-
-footer {
-    width: 100%;
-    height: 100px;
-    line-height: 20px;
-    background-color: #160ce6;
-    color: #fff;
-    font-size: 14px;
-    text-align: center;
-    border-radius: 5px;
-    margin-top: 8px;
-}
-
 
     .frame {
         /* margin-top: 50px; */
@@ -262,7 +249,7 @@ footer {
     color: rgb(0, 0, 0);
     background-color: rgb(123, 164, 239);
     font-size: 16px;
-    width: 233px;
+    width: 233px;  
     height: 30px;
     margin-top: -30px;
 }
@@ -282,15 +269,16 @@ footer {
 .nav_cow_3{
         width: 100%;
         border: 1px  solid gray;
-        height: 1200px;
+        height: 1000px;
         margin-top: 80px;
+        border: none;
 }
-
 
 .fram_verol{
     width: 70%;
     border: 1px solid gray;
-    height: 1200px;
+    height: 1000px;
+    border: none;
 }
 
 
@@ -344,4 +332,48 @@ footer {
 .conten__main{
     display: flex;
     justify-content: space-around;
+}
+.conten__main_right{
+    /* display: flex;
+    flex-direction: row-reverse; */
+    position: absolute;
+    background-color: #f1600c1d;
+    width: 25%;
+    height: 800px;
+    right: 30px;
+    top: 1650px;
+    box-shadow: 0 0  10px rgba(197, 86, 45, 0.757) ;
+}
+.run__conten{
+    text-align: center;
+    background-color: #ffffff;
+    width: 90%;
+    margin-left: 5%;
+}
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 120px;
+    line-height: 20px;
+    background-color: #365ddd;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+.text__footer{
+    padding-top: 20px;
+    line-height: 25px
+}
+.link__for{
+    color: #ffff;
+}
+.link__for:hover{
+    text-decoration: underline;
+    color: #f34d0c;
 }
