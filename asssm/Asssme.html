@@ -8,6 +8,27 @@
     <link rel="icon" type="icon" href="img/mũ.png" />
     <title>Trường THPT Hồ Nghinh</title>
     <link rel="stylesheet" href="styleAssm.css">
+    <script language='javascript'>
+        var myVar = setInterval(function () { Clock() }, 1000);
+        function Clock() {
+            a = new Date();
+            w = Array("Chủ Nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy");
+            var a = w[a.getDay()],
+                w = new Date,
+                d = w.getDate();
+            m = w.getMonth() + 1;
+            y = w.getFullYear();
+            h = w.getHours();
+            mi = w.getMinutes();
+            se = w.getSeconds();
+            if (10 > d) { d = "0" + d }
+            if (10 > m) { m = "0" + m }
+            if (10 > h) { h = "0" + h }
+            if (10 > mi) { mi = "0" + mi }
+            if (10 > se) { se = "0" + se }
+            document.getElementById("clockDiv").innerHTML = "" + a + ", " + d + "/" + m + "/" + y + " - " + h + ":" + mi + "";
+        }
+    </script>
 </head>
 
 <body>
@@ -30,29 +51,32 @@
 
                 <td>
                     <a href="https://ap.poly.edu.vn/">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook"
-                            viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
                             <path
                                 d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                         </svg>
                     </a>
                     <a href="https://www.youtube.com/">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube"
-                            viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-youtube" viewBox="0 0 16 16">
                             <path
                                 d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
                         </svg>
                     </a>
-                    <a href="https://www.google.com/search?q=gg+d%E1%BB%8Bch&rlz=1C1CHBD_viVN983VN983&oq=&aqs=chrome.0.35i39i362l8.1761085j0j7&sourceid=chrome&ie=UTF-8">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe"
-                            viewBox="0 0 16 16">
+                    <a
+                        href="https://www.google.com/search?q=gg+d%E1%BB%8Bch&rlz=1C1CHBD_viVN983VN983&oq=&aqs=chrome.0.35i39i362l8.1761085j0j7&sourceid=chrome&ie=UTF-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-globe" viewBox="0 0 16 16">
                             <path
                                 d="M0 8a8    8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
                         </svg>
                     </a>
                 </td>
                 <td>
-                   <a href="pageLogin.html"> <button   class="login__right" style="width:150px;height: 30px;font-weight: bold;border-radius: 10px;outline: none;background-color: #738ee8;border: 1px solid gray;font-size: 14px;">Đăng nhập</button></a>
+                    <a href="pageLogin.html"> <button class="login__right"
+                            style="width:150px;height: 30px;font-weight: bold;border-radius: 10px;outline: none;background-color: #738ee8;border: 1px solid gray;font-size: 14px;">Đăng
+                            nhập</button></a>
                 </td>
             </tr>
         </table>
@@ -73,7 +97,8 @@
                                     d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
                             </svg>
                         </a></li>
-                    <li><a href="https://daihoc.fpt.edu.vn/tuyen-sinh/">Tuyển sinh</a>
+                    <li>
+                        <a href="https://daihoc.fpt.edu.vn/tuyen-sinh/">Tuyển sinh</a>
                         <ul class="sub-nav">
                             <li><a href="https://daihoc.fpt.edu.vn/tuyen-sinh/">Kết quả thi vào lớp 10 </a></li>
                             <li><a href="https://daihoc.fpt.edu.vn/tuyen-sinh/">Bảng xếp hạng</a></li>
@@ -91,19 +116,25 @@
                     <li>
                         <a href="https://daihoc.fpt.edu.vn/tuyen-sinh/thu-tuc-dang-ky/">Nghiên cứu khoa học </a>
                         <ul class="sub-nav">
-                            <li><a href="https://daihoc.fpt.edu.vn/tuyen-sinh/thu-tuc-dang-ky/">Hội nghị - hội thảo </a></li>
-                            <li><a href="https://daihoc.fpt.edu.vn/tuyen-sinh/thu-tuc-dang-ky/">Công trình khoa học</a></li>
-                            <li><a href="https://daihoc.fpt.edu.vn/tuyen-sinh/thu-tuc-dang-ky/">Thông tin - thông báo</a></li>
-                            <li><a href="https://daihoc.fpt.edu.vn/tuyen-sinh/thu-tuc-dang-ky/">Hợp tác nghiên cứu</a></li>
+                            <li><a href="https://daihoc.fpt.edu.vn/tuyen-sinh/thu-tuc-dang-ky/">Hội nghị - hội thảo </a>
+                            </li>
+                            <li><a href="https://daihoc.fpt.edu.vn/tuyen-sinh/thu-tuc-dang-ky/">Công trình khoa học</a>
+                            </li>
+                            <li><a href="https://daihoc.fpt.edu.vn/tuyen-sinh/thu-tuc-dang-ky/">Thông tin - thông
+                                    báo</a></li>
+                            <li><a href="https://daihoc.fpt.edu.vn/tuyen-sinh/thu-tuc-dang-ky/">Hợp tác nghiên cứu</a>
+                            </li>
                         </ul>
                     </li>
                     <li><a href="https://daihoc.fpt.edu.vn/tuyen-sinh/thu-tuc-dang-ky/">Tin hoạt động</a>
                         <ul class="sub-nav">
-                            <li><a href="https://daihoc.fpt.edu.vn/tuyen-sinh/thu-tuc-dang-ky/">Hoạt động chung</a> </li>
+                            <li><a href="https://daihoc.fpt.edu.vn/tuyen-sinh/thu-tuc-dang-ky/">Hoạt động chung</a>
+                            </li>
 
                             <li><a href="https://daihoc.fpt.edu.vn/tuyen-sinh/thu-tuc-dang-ky/">Sự kiện nổi bật</a></li>
                             <li><a href="https://daihoc.fpt.edu.vn/tuyen-sinh/thu-tuc-dang-ky/">Thông báo</a></li>
-                            <li><a href="https://daihoc.fpt.edu.vn/tuyen-sinh/thu-tuc-dang-ky/">Phục vụ cộng đồng</a></li>
+                            <li><a href="https://daihoc.fpt.edu.vn/tuyen-sinh/thu-tuc-dang-ky/">Phục vụ cộng đồng</a>
+                            </li>
                         </ul>
                     </li>
 
@@ -111,7 +142,8 @@
                     <li><a href="https://daihoc.fpt.edu.vn/lien-he-voi-chung-toi/">Góp ý</a>
                         <ul class="sub-nav">
                             <li><a href="https://daihoc.fpt.edu.vn/lien-he-voi-chung-toi/">Góp ý - SGD</a></li>
-                            <li><a href="https://daihoc.fpt.edu.vn/lien-he-voi-chung-toi/">Góp ý - Ban nhà trường </a></li>
+                            <li><a href="https://daihoc.fpt.edu.vn/lien-he-voi-chung-toi/">Góp ý - Ban nhà trường </a>
+                            </li>
                         </ul>
                     </li>
                     <li><a href="https://daihoc.fpt.edu.vn/lien-he-voi-chung-toi/">Hỏi & đáp</a>
@@ -128,10 +160,15 @@
 
 
         <nav class="fram_cow_2">
-            <span class="current_time">Chủ nhật, 19/02/2023, 22:04 </span>
-
+            <span class="current_time">
+                <svg class="calendar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-calendar" viewBox="0 0 16 16">
+                    <path
+                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                </svg>
+                <div id="clockDiv"></div>
+            </span>
             <input class="form_find" type="search" placeholder="Tìm kiêm...">
-
             <button class="img_find">
                 <img src="img/search.png" alt="find" width="20px" height="20px">
             </button>
@@ -181,7 +218,7 @@
                 <span style="font-family: Arial, Helvetica, sans-serif;">
                     <span style="color: rgb(70, 106, 225);">
                         <span style="margin-top: 10px;">
-                            <br><br><br> <span style="font-weight: bold;">MÔI TRƯỜNG ĐÀO TẠO</span>
+                            <br><br> <span style="font-weight: bold;">MÔI TRƯỜNG ĐÀO TẠO</span>
                             <br> <span>..................................................................</span><br><br>
                         </span>
                     </span>
@@ -193,20 +230,24 @@
             <div class="frame">
                 <div class="noidung">
                     <div class="zoom_blur">
-                        <img src="img/img1.png" title="" />
-                        <div class="text_image"><a href="https://daihoc.fpt.edu.vn/tin-tuc/" >Làm việc với Đảng CSVN ....</a></div>
+                        <a href="http://thpthonghinh.edu.vn/"> <img src="img/img1.png" title="" /></a>
+                        <div class="text_image"><a href="https://daihoc.fpt.edu.vn/tin-tuc/">Làm việc với Đảng CSVN
+                                ....</a></div>
                     </div>
                     <div class="zoom_blur">
-                        <img src="img/img2.jpg" alt="">
-                        <div class="text_image"><a href="https://daihoc.fpt.edu.vn/tin-tuc/">Làm việc với Đại ....</a></div>
+                        <a href="http://thpthonghinh.edu.vn/"><img src="img/img2.jpg" alt=""></a>
+                        <div class="text_image"><a href="https://daihoc.fpt.edu.vn/tin-tuc/">Làm việc với Đại ....</a>
+                        </div>
                     </div>
                     <div class="zoom_blur">
-                        <img src="img/img3.jpg" alt="">
-                        <div class="text_image"><a href="https://daihoc.fpt.edu.vn/tin-tuc/">Tiếp và làm việc với....</a></div>
+                        <a href="http://thpthonghinh.edu.vn/"><img src="img/img3.jpg" alt=""></a>
+                        <div class="text_image"><a href="https://daihoc.fpt.edu.vn/tin-tuc/">Tiếp và làm việc
+                                với....</a></div>
                     </div>
                     <div class="zoom_blur">
-                        <img src="img/img4.jpeg" alt="">
-                        <div class="text_image"><a href="https://daihoc.fpt.edu.vn/tin-tuc/">Trường thpt - Hồ Nghinh ....</a></div>
+                        <a href="http://thpthonghinh.edu.vn/"> <img src="img/img4.jpeg" alt=""></a>
+                        <div class="text_image"><a href="https://daihoc.fpt.edu.vn/tin-tuc/">Trường thpt - Hồ Nghinh
+                                ....</a></div>
                     </div>
                 </div>
             </div>
@@ -255,7 +296,7 @@
                             </span>
                         </h3>
                         <p style="text-align:left;">
-                            &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp;
                             <span style="font-size:14px;">
                                 <span style="font-family:Arial,Helvetica,sans-serif;">
                                     Trường THPT Hồ Nghinh, trường được thành lập
@@ -339,31 +380,39 @@
                 <div class="conten__main">
                     <div class="frame_conten_1">
                         <div class="tille_start">
+
                             <a href="https://daihoc.fpt.edu.vn/doi-song-sinh-vien/">
-                                <p>Sự kiện nổi bật</p>
+
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-calendar-check" viewBox="0 0 16 16">
+                                    <path
+                                        d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                    <path
+                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                </svg>
+                                <label for=""> Sự kiện nổi bật</label>
+
                             </a>
                         </div>
                         <div class="frame_cow1">
                             <div class="font_text">
                                 <a href="">
-                                    <p style="color: rgb(6, 6, 120);">"Người kiến" Paul Rudd xây dựng khối tài sản hơn
-                                        1,6
-                                        nghìn tỷ đồng như thế nào?</p>
+                                    <p style="color: rgb(6, 6, 120);">Trường THPT Hồ Nghinh: Ngôi trường trẻ, thành tích
+                                        cao</p> <br>
                                 </a>
                             </div>
-                            <br>
-                            <div style="margin-left: 20px;" id="current-time"></div>
-                            <script>
-                                var curDate = new Date();
-                                var curDay = curDate.getDate();
-                                var curMonth = curDate.getMonth() + 1;
-                                var curYear = curDate.getFullYear();
-                                document.getElementById('current-time').innerHTML = curDay + "/" + curMonth + "/" + curYear;
-                            </script>
+                            
+                            <div style="font-size: 14px;color: gray;">
+                                <svg style="margin-top: 0px;position: absolute;margin-left: 0px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                  </svg>
+                               <p style="margin-left: 20px;position: absolute;"> 10/1/2019</p> <br>
+                            </div>
 
                             <div style="margin-top: 10px;">
-                                <img src="img/img5.jpg" alt="" width="160px">
-                                <div> ĐTN: Với chủ đề “Tuổi trẻ tiên phong chuyển đổi số”, Tháng Thanh niên năm 2023 là
+                                <p> <img src="img/conten2.jpg" alt="" width="160px" align="left">
+                                    ĐTN: Với chủ đề “Tuổi trẻ tiên phong chuyển đổi số”, Tháng Thanh niên năm 2023 là
                                     dịp
                                     để tăng cường chuyển đổi
                                     số đồng bộ trên tất cả các mặt công tác của Đoàn; phát huy vai trò của thanh niên
@@ -376,53 +425,52 @@
                                     phát động cuộc thi Sưu tập và tìm hiểu tem bưu chính năm 2023 với chủ đề “Tổ quốc
                                     của em
                                     qua con tem bưu chính.”
-                                </div>
+                                </p>
+
                             </div>
 
                         </div>
                     </div>
 
-
                     <div class="frame_conten_1">
                         <div class="tille_start">
-                            <a href="#">
-                                <p>Sự kiện nổi bật</p>
+
+                            <a href="https://daihoc.fpt.edu.vn/doi-song-sinh-vien/">
+
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-calendar-check" viewBox="0 0 16 16">
+                                    <path
+                                        d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                    <path
+                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                </svg>
+                                <label for=""> Sự kiện nổi bật</label>
+
                             </a>
                         </div>
                         <div class="frame_cow1">
                             <div class="font_text">
                                 <a href="">
-                                    <p style="color: rgb(6, 6, 120);">"Người kiến" Paul Rudd xây dựng khối tài sản hơn
-                                        1,6
-                                        nghìn tỷ đồng như thế nào?</p>
+                                    <p style="color: rgb(6, 6, 120);">Vì sao học sinh trên 30 điểm vẫn không được vào
+                                        trường THPT Hồ Nghinh?</p>
                                 </a>
                             </div>
                             <br>
-                            <div style="margin-left: 20px;" id="current-time"></div>
-                            <script>
-                                var curDate = new Date();
-                                var curDay = curDate.getDate();
-                                var curMonth = curDate.getMonth() + 1;
-                                var curYear = curDate.getFullYear();
-                                document.getElementById('current-time').innerHTML = curDay + "/" + curMonth + "/" + curYear;
-                            </script>
+                            <div style="font-size: 14px;color: gray;">
+                                <svg style="margin-top: 0px;position: absolute;margin-left: 0px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                  </svg>
+                               <p style="margin-left: 20px;position: absolute;"> 09/12/2020</p> <br>
+                            </div>
 
                             <div style="margin-top: 10px;">
-                                <img src="img/img5.jpg" alt="" width="160px">
-                                <div> ĐTN: Với chủ đề “Tuổi trẻ tiên phong chuyển đổi số”, Tháng Thanh niên năm 2023 là
-                                    dịp
-                                    để tăng cường chuyển đổi
-                                    số đồng bộ trên tất cả các mặt công tác của Đoàn; phát huy vai trò của thanh niên
-                                    tham
-                                    gia tích cực công cuộc
-                                    chuyển đổi số, ứng dụng công nghệ số. <br>
-                                    Ngày 22/2, tại Hà Nội, Hội đồng Đội Trung ương, Tổng Công ty Bưu điện Việt Nam và
-                                    Hội
-                                    Tem Việt Nam chính thức
-                                    phát động cuộc thi Sưu tập và tìm hiểu tem bưu chính năm 2023 với chủ đề “Tổ quốc
-                                    của em
-                                    qua con tem bưu chính.”
-                                </div>
+                                <p> <img src="img/img5.jpg" alt="" width="160px" align="left">
+                                    ĐTN: Theo phản ánh của nhiều phụ huynh ở một số xã vùng Đông huyện Duy Xuyên gồm Duy
+                                    Thành, Duy Nghĩa, Duy Vinh… , con em của mình đạt từ 30-34 điểm vẫn không được xét
+                                    tuyển vào trường THPT Hồ Nghinh (đóng tại xã Duy Thành).
+                                </p>
+
                             </div>
 
                         </div>
@@ -433,31 +481,40 @@
                 <div class="conten__main">
                     <div class="frame_conten_1">
                         <div class="tille_start">
-                            <a href="#">
-                                <p>Sự kiện nổi bật</p>
+
+                            <a href="https://daihoc.fpt.edu.vn/doi-song-sinh-vien/">
+
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-calendar-check" viewBox="0 0 16 16">
+                                    <path
+                                        d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                    <path
+                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                </svg>
+                                <label for=""> Sự kiện nổi bật</label>
+
                             </a>
                         </div>
                         <div class="frame_cow1">
                             <div class="font_text">
-                                <a href="">
-                                    <p style="color: rgb(6, 6, 120);">"Người kiến" Paul Rudd xây dựng khối tài sản hơn
-                                        1,6
-                                        nghìn tỷ đồng như thế nào?</p>
+                                <a
+                                    href="https://baoquangnam.vn/giao-duc/truong-thpt-ho-nghinh-ngoi-truong-tre-thanh-tich-cao-111829.html">
+                                    <p style="color: rgb(6, 6, 120);">Trường THPT Hồ Nghinh: Ngôi trường trẻ, thành tích
+                                        cao</p>
                                 </a>
                             </div>
                             <br>
-                            <div style="margin-left: 20px;" id="current-time"></div>
-                            <script>
-                                var curDate = new Date();
-                                var curDay = curDate.getDate();
-                                var curMonth = curDate.getMonth() + 1;
-                                var curYear = curDate.getFullYear();
-                                document.getElementById('current-time').innerHTML = curDay + "/" + curMonth + "/" + curYear;
-                            </script>
+                            <div style="font-size: 14px;color: gray;">
+                                <svg style="margin-top: 0px;position: absolute;margin-left: 0px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                  </svg>
+                               <p style="margin-left: 20px;position: absolute;"> 23/08/2022</p> <br>
+                            </div>
 
                             <div style="margin-top: 10px;">
-                                <img src="img/img5.jpg" alt="" width="160px">
-                                <div> ĐTN: Với chủ đề “Tuổi trẻ tiên phong chuyển đổi số”, Tháng Thanh niên năm 2023 là
+                                <p> <img src="img/conten3.webp" alt="" width="160px" align="left">
+                                    ĐTN: Với chủ đề “Tuổi trẻ tiên phong chuyển đổi số”, Tháng Thanh niên năm 2023 là
                                     dịp
                                     để tăng cường chuyển đổi
                                     số đồng bộ trên tất cả các mặt công tác của Đoàn; phát huy vai trò của thanh niên
@@ -470,53 +527,53 @@
                                     phát động cuộc thi Sưu tập và tìm hiểu tem bưu chính năm 2023 với chủ đề “Tổ quốc
                                     của em
                                     qua con tem bưu chính.”
-                                </div>
+                                </p>
+
                             </div>
 
                         </div>
                     </div>
 
-
                     <div class="frame_conten_1">
                         <div class="tille_start">
-                            <a href="#">
-                                <p>Sự kiện nổi bật</p>
+
+                            <a href="https://daihoc.fpt.edu.vn/doi-song-sinh-vien/">
+
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-calendar-check" viewBox="0 0 16 16">
+                                    <path
+                                        d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                    <path
+                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                </svg>
+                                <label for=""> Sự kiện nổi bật</label>
+
                             </a>
                         </div>
                         <div class="frame_cow1">
                             <div class="font_text">
-                                <a href="">
-                                    <p style="color: rgb(6, 6, 120);">"Người kiến" Paul Rudd xây dựng khối tài sản hơn
-                                        1,6
-                                        nghìn tỷ đồng như thế nào?</p>
+                                <a
+                                    href="https://baoquangnam.vn/giao-duc/truong-thpt-ho-nghinh-ngoi-truong-tre-thanh-tich-cao-111829.html">
+                                    <p style="color: rgb(6, 6, 120);">Vì sao học sinh trên 30 điểm vẫn không được vào
+                                        trường THPT Hồ Nghinh?</p>
                                 </a>
                             </div>
                             <br>
-                            <div style="margin-left: 20px;" id="current-time"></div>
-                            <script>
-                                var curDate = new Date();
-                                var curDay = curDate.getDate();
-                                var curMonth = curDate.getMonth() + 1;
-                                var curYear = curDate.getFullYear();
-                                document.getElementById('current-time').innerHTML = curDay + "/" + curMonth + "/" + curYear;
-                            </script>
+                            <div style="font-size: 14px;color: gray;">
+                                <svg style="margin-top: 0px;position: absolute;margin-left: 0px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                  </svg>
+                               <p style="margin-left: 20px;position: absolute;"> 07/09/2022</p> <br>
+                            </div>
 
                             <div style="margin-top: 10px;">
-                                <img src="img/img5.jpg" alt="" width="160px">
-                                <div> ĐTN: Với chủ đề “Tuổi trẻ tiên phong chuyển đổi số”, Tháng Thanh niên năm 2023 là
-                                    dịp
-                                    để tăng cường chuyển đổi
-                                    số đồng bộ trên tất cả các mặt công tác của Đoàn; phát huy vai trò của thanh niên
-                                    tham
-                                    gia tích cực công cuộc
-                                    chuyển đổi số, ứng dụng công nghệ số. <br>
-                                    Ngày 22/2, tại Hà Nội, Hội đồng Đội Trung ương, Tổng Công ty Bưu điện Việt Nam và
-                                    Hội
-                                    Tem Việt Nam chính thức
-                                    phát động cuộc thi Sưu tập và tìm hiểu tem bưu chính năm 2023 với chủ đề “Tổ quốc
-                                    của em
-                                    qua con tem bưu chính.”
-                                </div>
+                                <p> <img src="img/conten4jpg.jpg" alt="" width="160px" height="100px" align="left">
+                                    ĐTN: Theo phản ánh của nhiều phụ huynh ở một số xã vùng Đông huyện Duy Xuyên gồm Duy
+                                    Thành, Duy Nghĩa, Duy Vinh… , con em của mình đạt từ 30-34 điểm vẫn không được xét
+                                    tuyển vào trường THPT Hồ Nghinh (đóng tại xã Duy Thành).
+                                </p>
+
                             </div>
 
                         </div>
@@ -545,7 +602,7 @@
                 <!-- <marquee></marquee>  -->
                 <div class="run__conten">
                     <marquee onmouseout="this.start()" onmouseover="this.stop()" scrolldelay="5" scrollamount="2"
-                        direction="up" style="height: 400px; width: 278px;">
+                        direction="up" style="height: 200px; width: 240px;">
                         <p><span style="color: #0000ff;" data-mce-mark="1"><strong>1. Cựu học sinh niên khóa 1998-2001:
                                     20.000.000
                                     VNĐ</strong></span></p>
@@ -634,30 +691,48 @@
                     </marquee>
                 </div>
                 <div style="text-align: center;">
-                <strong style="color: #f13b3b;"><br><br> Ban tổ chức Lễ kỷ niệm 70 năm thành lập trường xin cảm ơn và ghi nhận tình cảm mạnh thường quân, các anh chị Cựu HS. Chúc hạnh phúc và thành đạt!<br data-mce-bogus="1"></strong>
+                    <strong style="color: #f13b3b;"><br><br> Ban tổ chức Lễ kỷ niệm 70 năm thành lập trường xin cảm ơn
+                        và ghi nhận tình cảm mạnh thường quân, các anh chị Cựu HS. Chúc hạnh phúc và thành đạt!<br
+                            data-mce-bogus="1"></strong>
                 </div>
             </section>
+
+
+            <div class="conten__main_right_below">
+            
+                <h3 class="title"> <span> Lời hay ý đẹp </span> </h3><br>
+                <hr>    <br>
+                <td >
+                    <div style="position:related; height:100%;width:100%;">
+                        <div>Tình bạn ít ồn ào nhất và
+                            khiêm nhường nhất là tình bạn hữu ích
+                            nhất.</div>
+                        <div style="color:red;"><b>J.Eđison</b></div>
+                    </div>
+                </td>
+            </div>
+
         </section>
     </section>
 
 
     <!--text <center></center> -->
 
-<footer>
-    <div class="text__footer">
-        <h5 style="font-size: 22px;">
-            ***** TRƯỜNG THPT HỒ NGHINH ***** 
-        </h5>
-        <span>
-            Địa chỉ: <a class="link__for" href="">Duy Vinh - Duy Xuyên - Quảng Nam</a>
-        </span>
-        <p>
-            Email: <a class="link__for"  href="">thpt_Hồ-Nghinh@gmail.com</a>
-        </p>
-    </div>
-</footer>
+    <footer>
+        <div class="text__footer">
+            <h5 style="font-size: 22px;">
+                ***** TRƯỜNG THPT HỒ NGHINH *****
+            </h5>
+            <span>
+                Địa chỉ: <a class="link__for" href="">Duy Vinh - Duy Xuyên - Quảng Nam</a>
+            </span>
+            <p>
+                Email: <a class="link__for" href="">thpt_Hồ-Nghinh@gmail.com</a>
+            </p>
+        </div>
+    </footer>
 
-<script src="https://uhchat.net/code.php?f=ef892d"></script>
+    <script src="https://uhchat.net/code.php?f=ef892d"></script>
 </body>
 
 </html>

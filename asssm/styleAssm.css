@@ -1,6 +1,7 @@
     body {
     margin: 0;
     padding: 0;
+    background-color: #0c5fdb71;
 }
 
 .table {
@@ -11,14 +12,14 @@
     border: 1px solid #6b6767;
     padding: 0px;
     border: none;
-
+    background-color: #fff  ;
 }
 
 td {
     border: none;
     text-align: left;
 }
-
+    
 tr {
     background-color: rgba(15, 108, 221, 0.184);
 }
@@ -29,7 +30,7 @@ td a {
 }
 
 td a:hover {
-    color: #13043f;
+    color: #ef1a0f;
 }
 
 .column_2_4 {
@@ -57,13 +58,14 @@ svg {
 
 .section {
     position: relative;
-    width: 80%;
-    height: 2700px;
-    margin-left: 10%;
+    width: 70%;
+    height: 2600px;
+    margin-left: 15%;
     border: 1px solid #6b6b6a;
     border-radius: 10px;
     border-top: none;
     margin-top: -30px;
+    background-color: #ffffff;
 }
 
 * {
@@ -102,7 +104,6 @@ svg {
 .nav .text-nav a:hover {
     text-decoration: none;
     display: flex;
-    padding: 16px;
     background-color: #1e0baeef;
 }
 
@@ -145,14 +146,18 @@ svg {
 }
 
 .current_time {
-    display: inline-block;
+    display: flex;
     vertical-align: middle;
     margin-right: 0px;
     line-height: 45px;
     margin-left: 20px;
     width: 90%;
-    font-size: 18px;
+    font-size: 16px;
     color: #353536;
+}
+.calendar{
+    margin-top: 13px;
+
 }
 
 .form_find {
@@ -249,7 +254,7 @@ svg {
     color: rgb(0, 0, 0);
     background-color: rgb(123, 164, 239);
     font-size: 16px;
-    width: 233px;  
+    width: 201px;  
     height: 30px;
     margin-top: -30px;
 }
@@ -279,6 +284,7 @@ svg {
     border: 1px solid gray;
     height: 1000px;
     border: none;
+    position: relative;
 }
 
 
@@ -294,12 +300,19 @@ svg {
     background-color: #ededed;
     border-bottom: none;
     font-weight: bold;
+    position: relative;
 }
-.tille_start p{
+.tille_start label{
     color: #1525a0;
-    margin-top: 12px;
-    margin-left: 10px;
-   
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.tille_start a svg{
+    position: absolute;
+    margin-top: 15px;
+    color: #0f21eb;
 }
 
 .frame_cow1{
@@ -331,18 +344,17 @@ svg {
 }
 .conten__main{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .conten__main_right{
     /* display: flex;
     flex-direction: row-reverse; */
     position: absolute;
-    background-color: #f1600c1d;
     width: 25%;
-    height: 800px;
+    height: 600px;
     right: 30px;
     top: 1650px;
-    box-shadow: 0 0  10px rgba(197, 86, 45, 0.757) ;
+    box-shadow: 0 0  10px rgba(156, 153, 152, 0.757) ;
 }
 .run__conten{
     text-align: center;
@@ -364,7 +376,7 @@ footer {
     font-size: 15px;
     text-align: center;
     border-radius: 5px;
-    margin-top: 8px;
+    margin-top: 0px;
 }
 .text__footer{
     padding-top: 20px;
@@ -376,4 +388,15 @@ footer {
 .link__for:hover{
     text-decoration: underline;
     color: #f34d0c;
+}
+.conten__main_right_below{
+    border: 1px solid rgba(4, 89, 235, 0.196);
+    width: 25%;
+    height: 140px;
+    position: absolute;
+    /* background-color: #0c86f137; */
+    top: 2290px;
+    right: 30px;
+    padding: 10px;
+    box-shadow: 0 0 10px #b7b9ba8f;
 }

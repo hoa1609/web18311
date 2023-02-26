@@ -1,18 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="style.css">
+    <script language='javascript'>
+        var myVar=setInterval(function(){Clock()},1000);
+        function Clock() {
+        a=new Date();
+        w=Array("Chủ Nhật","Thứ hai","Thứ ba","Thứ tư","Thứ năm","Thứ sáu","Thứ bảy");
+        var a=w[a.getDay()],
+        w=new Date,
+        d=w.getDate();
+        m=w.getMonth()+1;
+        y=w.getFullYear();
+        h=w.getHours();
+        mi=w.getMinutes();
+        se=w.getSeconds();
+        if(10>d){d="0"+d}
+        if(10>m){m="0"+m}
+        if(10>h){h="0"+h}
+        if(10>mi){mi="0"+mi}
+        if(10>se){se="0"+se}
+        document.getElementById("clockDiv").innerHTML="Hôm nay: "+a+", "+d+" / "+m+" / "+y+" - "+h+":"+mi+":"+se+"";
+        }
+    </script>
 </head>
 <body>
-    <div id="jv-footer" class="clearfix"><div class="jv-block"><div class="jv-footer"><div class="copyright"><div>Bản quyền thuộc về Trường THPT Trần Quý Cáp. <br>Địa chỉ: 07 Trần Hưng Đạo, thành phố Hội An, tỉnh Quảng Nam   - Điện thoại: 05103.861.256 - Email: hopthutqc@gmail.com</div><div><a target="_blank" href="http://www.tavico.vn">Phát triển bởi TAVICO</a></div><div onclick="show_hide('box01');" type="button" style="padding-left: 2px;">...</div><div onclick="show_hide('box01');" type="button" style="padding-left: 2px;"></div><div id="box01" style="display: none; padding-right: 2px;"><div style="font-size: 6pt; line-height: 1.5;"><a href="https://linkw88.co/" title="Link w88">Link w88</a></div></div></div><script type="text/javascript">function show_hide(id) {
-        var e = document.getElementById(id);
-        if(e.style.display == 'none')
-        e.style.display = 'block';
-        else
-        e.style.display = 'none';
-        }</script></div></div></div>
+    
+                <div id="clockDiv"></div>
+               
+           
+               
+    </div>
 </body>
 </html>
